@@ -6,7 +6,7 @@ Start-Transcript -Path "./output/transcripts/transcript_$date.txt" | Out-Null
  
 # Title Screen
 Write-Output '------------------------------------------------------------------------------------------------------------------'
-Write-Output "                                                            EasyJob - Schedule Group Member Removal        "
+Write-Output "                            EasyJob - Schedule Group Member Removal        "
 Write-Output '------------------------------------------------------------------------------------------------------------------'
 Write-Output " "
 $resourcegroup = "mits-automation" 
@@ -16,7 +16,7 @@ $Runbook = "Remove-GroupMember"
 $hours = $args[2]
 $days = $args[3]
 $min = $args[4]
-
+ 
 Write-Host -ForegroundColor Yellow "===Powershell Module Verification==="
 #AzureAD Module Check
 If (Get-Module -ListAvailable -name Az.Accounts) {
