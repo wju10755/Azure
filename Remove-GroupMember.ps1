@@ -1,3 +1,4 @@
+Clear-Host
 $ErrorActionPreference = "SilentlyContinue"
 $WarningPreference = "SilentlyContinue"
 $date = Get-Date -Format "yyyyMMdd_HHmmss"
